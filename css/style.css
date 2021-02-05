@@ -1,0 +1,69 @@
+.body{
+   font-family: "Lato", sans-serif;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	/* vh significa la altura de toda la pantalla que tiene 
+	la persona, es un valor de 0 a 100 es el valor de la pantalla*/
+
+	background-image: linear-gradient(
+		to left bottom,
+		rgba(60, 205, 176, 0.15),
+		rgba(76, 214, 161, 0.40)
+	), url(https://images.unsplash.com/photo-1599799121989-b732b15d1dd4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGxpYmVydGFkfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+		background-size: cover;
+		background-position: top;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+		
+}
+.header-logo-box {
+	position: absolute;
+	top: 4rem;
+	left: 4rem; 
+}
+.header-logo{
+	height: 5.5rem;
+
+}
+
+.heading-primary-main{
+    display: block;
+    /*block es para que el elemento que tenga el blokc este solo en una linea*/
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+
+}
+
+.heading-primary-sub{
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 0.75rem;
+
+}
+
+.header-text-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btn{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem; 
+	border-radius: 10rem;
+	background-color: white;
+	color: #1b90a2;
+    transition: all 0.5s;
+	}
+	.btn:hover {
+		transform: scaleX(1.2);
+	}
