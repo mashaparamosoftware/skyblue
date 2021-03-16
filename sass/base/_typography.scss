@@ -1,0 +1,25 @@
+.heading {
+	&-primary{
+		&--main {
+			display: block;
+    		/*block es para que el elemento que tenga el blokc este solo en una linea*/
+    		font-size: 6rem;
+    		font-weight: 400;
+    		letter-spacing: 2.5rem;
+    		text-align: center;
+    		animation-name: moveInLeft;
+    		animation-duration: 4s;
+		}
+
+		&--sub {
+			display: block;
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: 0.75rem;
+			margin-bottom: 80px;
+			animation-name: moveInright;
+			animation-duration: 4s;
+			text-align: center;
+		}
+	}
+}

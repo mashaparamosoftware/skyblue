@@ -1,0 +1,39 @@
+.btn {
+	&{
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 1.4rem 4rem; 
+		border-radius: 10rem;
+		background-color: rgba(239, 248, 253, 0.596);
+		color: #4f9abd;
+		transition: all 0.5s;
+		 animation-name: moveIntop;
+		animation-duration: 4s;
+		}
+	
+	&:hover {
+		transform: translateY(-6px);
+		transform: scaleX(1.2);
+		box-shadow: 0 20px 40px rgba(0,0,0,.35);
+		}
+	
+	&:active{
+		transform: translateY(-8px);
+		box-shadow: 0 20px 40px rgba(0,0,0,.35);
+	}
+	
+	&:after{
+		content: ""; 
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+	}
+
+
+}

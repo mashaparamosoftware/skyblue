@@ -1,0 +1,36 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 95vh;
+	/* vh significa la altura de toda la pantalla que tiene 
+	la persona, es un valor de 0 a 100 es el valor de la pantalla*/
+
+	background-image: linear-gradient(
+		to left bottom,
+		rgba(57, 207, 177, 0.315),
+		rgba(23, 177, 118, 0.664)
+	), url(https://images.unsplash.com/photo-1599799121989-b732b15d1dd4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGxpYmVydGFkfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+		background-size: cover;
+		background-position: top;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+		
+		&__logo-box{
+			position: absolute;
+			top: 4rem;
+			left: 4rem; 
+		}
+		&__logo{
+			height: 5.5rem;
+		
+		}
+		&__text-box{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+	
+		}
+}
